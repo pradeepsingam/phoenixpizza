@@ -674,7 +674,12 @@
                 var speed = $(this).attr('data-parallax-speed');
                 if (speed) {
                     var yPos = -(scrollPos * speed);
-                    $(this).css('transform', 'translateY(' + yPos + 'px)');
+                    var transformCSS = 'translateY(' + yPos + 'px)';
+                    var rotate = $(this).attr('data-parallax-rotate');
+                    if (rotate) {
+                        transformCSS += ' rotate(' + (scrollPos * parseFloat(rotate)) + 'deg)';
+                    }
+                    $(this).css('transform', transformCSS);
                 }
             });
         }
