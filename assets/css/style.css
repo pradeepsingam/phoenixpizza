@@ -4667,7 +4667,8 @@ h6,
   opacity: 1;
   position: relative;
   color: var(--heading-color);
-  font-family: var(--base-font);
+  font-family: var(--heading-font);
+  letter-spacing: 5px;
   text-transform: capitalize;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -4847,7 +4848,8 @@ h6,
 .header-number {
   font-size: 18px;
   margin-left: auto;
-  font-family: var(--base-font);
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
 }
 
 @media only screen and (max-width: 991px) {
