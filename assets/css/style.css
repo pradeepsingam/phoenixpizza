@@ -9160,6 +9160,17 @@ h6,
   -webkit-text-stroke-width: 0;
 }
 
+.hero-area .marquee-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  margin-top: -150px;
+  z-index: -1;
+  pointer-events: none;
+}
+
 @media only screen and (min-width: 1400px) {
   .marquee-wrap.style-two {
     font-size: 450px;
