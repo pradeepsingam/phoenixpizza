@@ -12051,3 +12051,28 @@ blockquote .blockquote-footer:before {
   color: var(--heading-color);
   background-image: url(../images/shapes/scroll-top-yellow-bg.png);
 }
+
+/* Mouse Smoke Effect */
+.smoke-particle {
+  position: fixed;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(150, 150, 150, 0.5) 0%, rgba(100, 100, 100, 0.2) 40%, transparent 70%);
+  border-radius: 50%;
+  z-index: 999999;
+  filter: blur(5px);
+  animation: smoke-anim 1.5s ease-out forwards;
+}
+
+@keyframes smoke-anim {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% - 70px)) scale(4);
+    opacity: 0;
+  }
+}
