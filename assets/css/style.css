@@ -12078,3 +12078,25 @@ blockquote .blockquote-footer:before {
     opacity: 0;
   }
 }
+/* Mobile Sticky Order Button */
+.mobile-sticky-order {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+.mobile-sticky-order .theme-btn {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 12px 35px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+@media (min-width: 992px) {
+    .mobile-sticky-order {
+        display: none !important;
+    }
+}
